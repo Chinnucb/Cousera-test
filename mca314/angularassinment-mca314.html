@@ -1,0 +1,75 @@
+<!doctype html>
+<html ng-app="myApp">
+  <head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <script type="text/ng-template" id="pages/home.html">
+<br><br><br>
+      <h1>Home</h1>
+     <table>
+<tr><td>name:</td><td>Chinnu CB</TD></tr>
+<tr><td>Rollno:</td><td>Mca314</TD></tr>
+<tr><td>Email:</td><td>chinnucb98@gmail.com</TD></tr>
+    </script>
+
+
+
+
+    <script type="text/ng-template" id="pages/blog.html">
+<br><br><br>
+      <h1>Register</h1>
+     <form action="" >
+      
+            <div class="form-group">
+                <label class="text" for=""><b>MCA Marks</b></label><br><br>
+                <label class="text" for=""><b>Semester 1</b></label>
+                <input type="text" name="" class="form-control" id="" ng-model="s1" required>
+            </div><br><br>
+            <div class="form-group">
+                <label class="text" for="">Semester 2 </label>
+                <input type="text" name="" class="form-control" id="" ng-model="s2" required>
+            </div><br><br>
+            <div class="form-group">
+                <label class="text" for="">Semester 3 </label>
+                <input type="text" name="" class="form-control" id="" ng-model="s3" required>
+            </div><br><br>
+            <div class="form-group">
+                <label class="text" for="">Semester 4 </label>
+                <input type="text" name="" class="form-control" id="" ng-model="s4" required>
+            </div><br><br>
+            <div class="form-group">
+                <label class="text" for="">Aggregate : {{ avg}}</label>
+                <!-- <input type="text" name="" class="form-control" id="" required> -->
+            </div><br><br><br>
+          
+            
+            <input class="btn" type="button" value="Submit" action="submit()" >
+        </form>
+    </script>
+
+
+
+
+    <script type="text/ng-template" id="pages/about.html">
+<br><br><br><br><br><br>
+      <h1>{{message}}</h1>
+    </script>
+
+
+
+
+    <a href="#/">Home</a>
+    <a href="#/blog">Register</a>
+    <a href="#/about">End</a>
+
+
+
+
+    <div ng-view></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
