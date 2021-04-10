@@ -1,2 +1,1 @@
-# Cousera-test
-Coursera test repository
+# Angular assignment repository
